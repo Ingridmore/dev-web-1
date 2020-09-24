@@ -1,0 +1,50 @@
+html{
+    height: 100vh;
+}
+body {
+    position: relative; height: 100%;
+}
+.wrapper {
+    width: 100%;
+    background: #FAFAFA;
+}
+
+.header{
+    background: #A9BCF5;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+    padding-top: 50px;
+    /*height: 200px;*/
+}
+
+.header h1{
+    color: white;
+}
+
+.page-content{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 60px;
+    overflow-y: auto;
+    padding-inline-start: 2em;
+    padding-inline-end: 2em;
+    height: 100%;
+    background-color: white;
+    padding-top: 2em;
+    /*min-height:calc(100% - 260px);*/
+}
+
+#footer{
+    height: 60px;
+    background-color: pink;
+}
+
+.nav-item.dropdown:hover, li.nav-item.dropdown.show a.nav-link {
+    background-color: red !important;
+}
+
+.eevolutions{
+    height: 350px;
+}

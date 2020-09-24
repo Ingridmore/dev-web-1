@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Desenvolvimento Voltado a Web</title>
+    <script type="text/javascript">
+
+        function atualizarRelogio(){
+            var relogio = document.getElementById("relogio");
+            var data = new Date().toLocaleString("pt-BR", {timeZone: "America/Sao_Paulo"});
+            var stringFormatado = data.replace(",", " - ");
+            relogio.innerHTML = stringFormatado;
+        }
+
+        function start(){
+            setInterval(atualizarRelogio, 1000);
+        }
+
+    </script>
+</head>
+<body onload="start()">
+<div class="wrapper">
+    <div class="header">
+        <p id="relogio"></p>
+        <h1 class="text-center">Curso: Tecnologia de Analise e desenvolvimento de sistemas</h1>
+        <h2 class="text-center">Disciplina: Desenvolvimento Voltado a Web</h2>
+        <div>
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Conteudo</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="aula1_2.html">Aula 1 e 2</a>
+                        <a class="dropdown-item active" href="aula3.html">Aula 3</a>
+                        <a class="dropdown-item" href="aula4.html">Aula 4</a>
+                        <a class="dropdown-item" href="formulario.html">Aula 5</a>
+                        <a class="dropdown-item" href="audio_video.html">Aula 6</a>
+                        <a class="dropdown-item" href="aula7.html">Aula 7</a>
+                        <a class="dropdown-item" href="formulario_js.html">Aula 8</a>
+                        <a class="dropdown-item" href="sobre.html">Sobre</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aula1_2.html">Aula 1 e 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="aula3.html">Aula 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aula4.html">Aula 4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formulario.html">Aula 5</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="audio_video.html">Aula 6</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aula7.html">Aula 7</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formulario_js.html">Aula 8</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-content">
+        <h1>titulo h1</h1>
+        <h2>titulo h2</h2>
+        <h3>titulo h3</h3>
+        <h4>titulo h4</h4>
+        <h5>titulo h5</h5>
+        <h6>titulo h6</h6>
+        <p>Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.</p>
+        <span>teste</span><br>
+        <a href="#">link teste</a><br>
+        <hr>
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <table class="table">
+            <thead class="thead-light">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer id="footer" class="fixed-bottom">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.google.com" target="_blank"> <i style="font-size:40px" class="fa">&#xf1a0;</i></a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/Ingridmore/dev-web-1" target="_blank"> <i style="font-size:40px" class="fa">&#xf09b;</i></a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com" target="_blank"> <i style="font-size:40px" class="fa">&#xf082;</i></a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/ingridsmoreira/" target="_blank"> <i style="font-size:40px" class="fa">&#xf0e1;</i></a></li>
+        </ul>
+    </footer>
+</div>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+</body>
+</html>
